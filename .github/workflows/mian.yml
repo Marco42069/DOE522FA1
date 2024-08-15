@@ -15,8 +15,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
-          publish_dir: ./your-html-directory  # Ensure this path is correct
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the default token or your PAT if needed
+          publish_dir: ./your-html-directory  # Update to the correct directory path
           publish_branch: gh-pages
           allow_empty_commit: false
           keep_files: false
